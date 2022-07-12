@@ -38,11 +38,6 @@ function progressBar() {
   document.getElementsByClassName("progress")[0].style.width = scrolled + "%";
 };
 
-// Header
-$('.menu-toggle').click(function () {
-  $('.menu-m').toggleClass('close');
-});
-
 $('footer').html(`
   <article>
     <div data-langNum="0"></div>

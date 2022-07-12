@@ -699,7 +699,7 @@ $.lang.en = {
   1703: 'Jeongwon Han'
 };
 
-
+// History - More Button
 $('.history .more-btn').click( function() {
   $('.history .more').toggleClass('hidden');
   if($('.history .more').hasClass('hidden')) {
@@ -708,11 +708,6 @@ $('.history .more-btn').click( function() {
     $('.history .more-btn').html('<img src="images/more-black-reverse.svg" alt="" width="34px">');
   };
 });
-
-
-
-
-
 
 // Team - Member Filter
 $('.filter').click(function() {
@@ -823,6 +818,7 @@ $('.filter').click(function() {
   */  
 });
 
+// Team - View All
 let viewAllToggle = true;
 $('.view-all').click(function() {
   $('.member-ul').toggleClass('hidden');
@@ -835,8 +831,6 @@ $('.view-all').click(function() {
     viewAllToggle = true;
   };
 });
-
-
 
 
 </script>
