@@ -1049,12 +1049,20 @@ div.team-detail-wrap .team-detail {
   background: #2e3df5;
   margin: 40px;
   border-radius: 4px;
+  -ms-overflow-style: none;
+}
+div.team-detail-wrap .team-detail::-webkit-scrollbar {
+  display: none;
 }
 div.team-detail-wrap .team-detail .team-detail-inner {
   width: 100%;
   height: 100%;
   border-radius: 4px;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+div.team-detail-wrap .team-detail .team-detail-inner::-webkit-scrollbar {
+  display: none;
 }
 div.team-detail-wrap .team-detail img.close {
   position: absolute;

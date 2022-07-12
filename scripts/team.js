@@ -48,9 +48,9 @@ let teamKo = [
   `<em class="name" onclick="teamDetailLoad('gene')">김강욱</em>은 <em>수퍼톤의 리서치 연구원</em>이며 <em>언어의 올바른 발음에 대해 연구</em>합니다.`,
   `<em class="name" onclick="teamDetailLoad('gene')">김강욱</em>은 <em>여유로운 날에 풋살을 즐깁</em>니다.`,
   `<em class="name" onclick="teamDetailLoad('gene')">김강욱</em>은 <em>마인즈랩에서 음성 합성 연구를 주도</em>했습니다.`,
-  //``,
-  //``,
-  //``,
+  `<em class="name" onclick="teamDetailLoad('dominic')">김완수</em>의 닉네임은 <em>Dominic</em>입니다.`,
+  `<em class="name" onclick="teamDetailLoad('dominic')">김완수</em>는 <em>여행을 다니며 풍경과 거리의 사진을 찍는 것을 좋아</em>합니다.`,
+  `<em class="name" onclick="teamDetailLoad('dominic')">김완수</em>는 <em>서울대학교에서 박사학위 취득을 위해 공부</em>하고 있습니다.`,
   //``,
   `<em class="name" onclick="teamDetailLoad('haeon')">이주헌</em>의 닉네임은 <em>Haeon</em>입니다.`,
   `<em class="name" onclick="teamDetailLoad('haeon')">이주헌</em>은 <em>수퍼톤의 Co-founder</em>이며 <em>인공지능이 노래하게 합</em>니다.`,
@@ -134,7 +134,12 @@ let teamKo = [
   `<em class="name" onclick="teamDetailLoad('dan')">한정원</em>의 닉네임은 <em>Dan</em>입니다.`,
   `<em class="name" onclick="teamDetailLoad('dan')">한정원</em>은 <em>수퍼톤의 디자이너</em>이며 <em>수퍼톤의 가치를 시각언어로 번역</em>합니다.`,
   `<em class="name" onclick="teamDetailLoad('dan')">한정원</em>은 <em>알고 싶은 것이 많</em>습니다.`,
-  `<em class="name" onclick="teamDetailLoad('dan')">한정원</em>은 <em>대학에서 순수미술과 시각디자인을 공부</em>했습니다.`
+  `<em class="name" onclick="teamDetailLoad('dan')">한정원</em>은 <em>대학에서 순수미술과 시각디자인을 공부</em>했습니다.`,
+  `<em class="name" onclick="teamDetailLoad('jaehyeon')">박재현</em>의 닉네임은 <em>Jaehyeon</em>입니다.`,
+  `<em class="name" onclick="teamDetailLoad('jaehyeon')">박재현</em>은 <em>수퍼톤의 코어개발팀 개발자</em>이며 <em>SDK를 개발하여 지원</em>합니다.`,
+  `<em class="name" onclick="teamDetailLoad('jaehyeon')">박재현</em>은 <em>여유로운 날에 요리하는 것을 좋아하지만 아직 초보</em>입니다.`,
+  `<em class="name" onclick="teamDetailLoad('jaehyeon')">박재현</em>은 <em>아주대학교에서 임베디드 소프트웨어를 전공</em>했습니다.`,
+  `<em class="name" onclick="teamDetailLoad('jaehyeon')">박재현</em>은 <em>티맥스오에스에서 멀티미디어 프레임워크와 협업툴 서비스 개발 프로젝트에 참여</em>했습니다.`
 ];
 
 let teamEn = [

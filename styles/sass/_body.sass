@@ -427,11 +427,17 @@ div.team-detail-wrap
     background: $orange //#EAEAEA
     margin: 40px
     border-radius: 4px
+    -ms-overflow-style: none
+    &::-webkit-scrollbar
+      display: none
     .team-detail-inner
       width: 100%
       height: 100%
       border-radius: 4px
       overflow-y: scroll
+      -ms-overflow-style: none
+      &::-webkit-scrollbar
+        display: none
     img.close
       position: absolute
       top: 16px
