@@ -1,6 +1,6 @@
 $('header').html(`
   <article>
-    <a href="//danhan.kr/supertone" target="_self"><img src="images/logo.svg" alt="" class="logo"></a>
+    <a href="//dan-supertone.github.io/supertone-wip" target="_self"><img src="images/logo.svg" alt="" class="logo"></a>
 
     <div class="lang"></div>
 
@@ -10,14 +10,14 @@ $('header').html(`
       <div class="post-wrapper">
         <!--<div class="post"><a href="/people/index.html" target="_self">People</a></div>-->
         <!--<div class="post"><a href="/media/index.html" target="_self">Media</a></div>-->
-        <div class="post"><a href="//danhan.kr/supertone/people/index.html" target="_self">People</a></div>
-        <div class="post"><a href="//danhan.kr/supertone/media/index.html" target="_self">Media</a></div>
+        <div class="post"><a href="//dan-supertone.github.io/supertone-wip/people/index.html" target="_self">People</a></div>
+        <div class="post"><a href="//dan-supertone.github.io/supertone-wip/media/index.html" target="_self">Media</a></div>
       </div>
     </div>
 
     <div class="menu">
-      <a href="//danhan.kr/supertone/people/index.html" target="_self">People</a>
-      <a href="//danhan.kr/supertone/media/index.html" target="_self">Media</a>
+      <a href="//dan-supertone.github.io/supertone-wip/people/index.html" target="_self">People</a>
+      <a href="//dan-supertone.github.io/supertone-wip/index.html" target="_self">Media</a>
     </div>
   </article>
 
@@ -39,7 +39,7 @@ function progressBar() {
 };
 
 // Header
-$('.menu-toggle').click( function() {
+$('.menu-toggle').click(function () {
   $('.menu-m').toggleClass('close');
 });
 
@@ -54,11 +54,11 @@ $('footer').html(`
 $('header .header-rolling .post-wrapper').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows : false,
-  dots : false, 
+  arrows: false,
+  dots: false,
   autoplay: true,
   autoplaySpeed: 1500,
-  vertical : true,
+  vertical: true,
   draggable: false,
   pauseOnFocus: false,
 });
