@@ -1,0 +1,476 @@
+@media all and (min-width: 900px)
+  $desktop-h1: 44px
+  $desktop-h2: 32px
+  $desktop-h3: 24px
+  $desktop-body: 18px
+
+  section,
+  header,
+  footer
+    width: 100%
+    margin: 0 auto
+    article
+      width: 100%
+      max-width: 1340px
+      //max-width: 1440px
+      margin: 0 auto
+
+  header
+    article
+      .menu
+        display: flex
+        position: absolute
+        top: 15px
+        right: 80px
+        a
+          font-size: 18px
+          color: $white
+          margin-left: 50px
+          &:hover
+            text-decoration: underline
+            text-underline-offset: 0.2rem
+            text-decoration-color: #FFF
+
+  section
+    article
+      padding: 10px 20px 60px 20px
+      .title
+        margin: 60px 0
+        h1
+          padding-bottom: 16px
+          border-bottom: solid 3px #000000
+        p
+          margin-top: 12px
+        h1
+          font-size: $desktop-h1
+        p
+          font-size: $desktop-body
+
+  .only-pc
+    display: block
+  .only-m
+    display: none
+
+  section.main
+    height: calc( 100vh - 58px )
+    article
+      h1
+        font-size: 90px
+        span
+          padding: 4px 18px
+          line-height: 1.6
+
+  section.technology
+    article
+      .title
+        margin-bottom: 120px
+    article.demo
+      display: flex
+      flex-flow: row nowrap
+      img
+        height: 38px
+        margin-bottom: 10px
+      .demo-inner
+        &.top
+          width: 400px
+          margin-top: 12px
+          margin-bottom: 40px
+          font-size: 16px
+        &.bottom
+          padding: 0
+          margin-bottom: 120px
+          font-size: 19px
+      .demo-inner-pc
+        width: 100%
+      .dbpq-wrap
+        margin-bottom: 36px
+      .dbpq-wrap-slider
+        margin-bottom: 36px
+      .video
+        margin-bottom: 36px
+
+  section.pub-n-awards.only-pc
+    article
+      padding-bottom: 0
+      .pna-inner-wrap
+        display: flex
+        flex-flow: row nowrap
+        .pna-inner
+          width: 50%
+          &:nth-child(1)
+            padding-right: 30px
+            padding-top: 15px
+          &:nth-child(2)
+            padding-left: 30px
+          ul
+            li
+              padding: 32px 0 36px 0
+              border-bottom: solid 1px $black
+              a
+                display: block
+                padding-bottom: 12px
+                font-weight: 500
+                font-size: 20px
+                &.no-p
+                  padding-bottom: 0
+              p
+                font-size: 12px
+
+  section.usecases
+    article
+      .title
+        margin-bottom: 48px
+      h2
+        font-size: $desktop-h2
+        padding-bottom: 8px
+      h3
+        font-size: 20px
+        padding-bottom: 10px
+      p
+        font-size: 16px
+        padding-bottom: 55px
+
+  section.contact.only-pc
+    article
+      .process
+        h2
+          font-size: $desktop-h1
+          color: $orange
+          padding-bottom: 40px
+        .necessity
+          border-bottom: solid 1px $white
+          h2
+            font-size: $desktop-h3
+            color: $white
+            padding-bottom: 20px
+          .necessity-inner-wrap
+            display: flex
+            flex-flow: row nowrap
+            padding-bottom: 70px
+            font-weight: 500
+            font-size: $desktop-body
+            .necessity-inner
+              width: 33.3%
+              padding: 2px 14px
+              margin: 0 10px 0 3px
+              border-left: solid 3px $white
+              p,
+              a
+                font-size: $desktop-body
+        .steps
+          padding-bottom: 60px
+          border-bottom: solid 1px $white
+          ul
+            display: flex
+            flex-flow: row nowrap
+            &.step-number
+              margin: 82px 22px 48px 22px
+              li
+                position: relative
+                width: 25%
+                border-top: solid 3px $orange
+                div
+                  position: absolute
+                  top: -22px
+                  width: 44px
+                  height: 44px
+                  padding-top: 9px
+                  border-radius: 50px
+                  background: $orange
+                  font-weight: 700
+                  font-size: $desktop-h3
+                  &.step-left
+                    left: -22px
+                  &.step-5
+                    right: -22px
+            li
+              position: relative
+              width: calc(25% - 11px)
+              h3
+                font-size: $desktop-h3
+                padding-bottom: 24px
+                &.step-5
+                  position: absolute
+                  top: 0
+                  right: -40px
+              p
+                width: calc(100% - 60px)
+                font-weight: 500
+                font-size: $desktop-body
+        .process-bottom
+          .brief-wrap
+            p
+              font-weight: 500
+              font-size: $desktop-body
+              text-align: center
+              margin: 80px 0 24px 0
+            a
+              display: block
+              width: 340px
+              min-width: 340px
+              height: 63px
+              padding: 14px 0 14px 0
+              margin: 0 auto
+              background: $orange
+              border-radius: 50px
+              font-weight: 500
+              font-size: 26px
+              margin-bottom: 24px
+
+  //people
+  section.people
+    height: calc( 100vh - 58px )
+    min-height: 750px
+    margin-top: $header-margin
+    border: solid 28px $orange
+    background: url('../people/images/people-pc.png')
+    background-size: cover
+    background-position: center
+    article
+      h1
+        position: absolute
+        top: 28px //10px
+        left: 20px //22px
+        font-size: 80px
+
+  section.vision
+    article
+      .vision-inner-wrap
+        display: flex
+        flex-flow: row nowrap
+        &>div
+          width: 50%
+          &:nth-child(1)
+            padding-right: 30px
+          &:nth-child(2)
+            padding-left: 30px
+          h2
+            padding: 0 0 58px 0
+            margin-bottom: 65px
+            font-size: $desktop-h1
+          p
+            font-size: $desktop-body
+
+  section.history
+    article
+      .history-inner-wrap
+        display: flex
+        flex-flow: row nowrap
+        font-weight: 500
+        font-size: $desktop-body
+        .history-inner
+          width: 50%
+          padding: 36px 0
+          &.left
+            padding-right: 30px
+          &.right
+            padding-left: 30px
+          .history-li
+            display: flex
+            flex-flow: row nowrap
+            border-bottom: solid 1px $black
+            padding: 36px 0
+            .history-year
+              width: 66px
+            .history-content
+              width: 100%
+            &:last-child
+              border: none
+
+  section.ethics
+    article
+      padding-bottom: 70px
+      .ethics-inner-wrap
+        display: flex
+        flex-flow: row nowrap
+        &>div
+          width: 50%
+          &:nth-child(1)
+            padding-right: 30px
+          &:nth-child(2)
+            padding-left: 30px
+        p
+          margin-top: 0
+        h2, p
+          font-size: $desktop-body
+
+  section.team
+    .random
+      height: 878px
+      padding: 8px 24px
+      font-size: 80px
+      border: solid 12px $orange
+      cursor: pointer
+      em
+        color: $orange
+        &.name
+          text-underline-offset: 0.6rem
+    .click-caption
+      font-size: 80px
+      line-height: 1
+      margin: -62px 16px 0 0
+      span
+        margin: -62px 22px 44px 0
+    button.view-all
+      display: block
+      width: 260px //270px
+      height: 63px
+      padding: 12px 0 14px 0
+      margin: 48px auto 24px auto
+      border-radius: 50px
+      background: $orange
+      font-size: 26px
+    .member-ul
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      width: 100%
+      max-width: 840px
+      min-height: 456px
+      padding: 0 2px
+      margin: 0 auto
+      &.hidden
+        height: 456px
+        overflow: hidden
+      .member-li
+        width: 130px
+        height: 228px
+        .member-img
+          width: 100%
+          border-radius: 100%
+          border: solid 3px #9F9F9F
+        p
+          margin-top: 10px
+          margin-bottom: 6px
+          font-size: 20px
+          &.en
+            font-size: 16px
+            white-space: nowrap
+          &:last-child
+            margin: 0 0 40px 0
+            font-size: 12px
+    .member-filter
+      max-width: 840px
+      padding: 0 2px
+      margin: 60px auto
+      .filter
+        font-size: 16px
+        padding: 8px 24px
+        margin: 6px 4px
+
+  div.team-detail-wrap
+    .team-detail
+      border-radius: 6px
+      .team-detail-inner
+        border-radius: 6px
+      .team-detail-profile-wrap
+        .team-detail-img
+          padding: 60px 60px 28px 60px
+        .team-detail-name-ko,
+        .team-detail-name-en
+          margin-bottom: 12px
+        .team-detail-role
+          margin-bottom: 58px
+      h1
+        font-size: 50px
+      h2
+        font-size: 24px
+      p
+        font-size: 50px
+        padding: 8px 22px
+        margin: 24px
+
+  section.join
+    article
+      padding-bottom: 94px
+      .join-inner-wrap
+        display: flex
+        flex-flow: row nowrap
+        margin: 100px 0
+        .join-inner
+          &.left
+            width: 100%
+          &.right
+            width: 600px
+            padding: 0 30px
+          p
+            font-size: 32px
+      .join-inner-bottom
+        display: flex
+        flex-flow: row nowrap
+        a
+          width: 360px
+          min-width: 360px
+          height: 63px
+          padding: 12px 0 14px 0
+          margin: 0
+          border-radius: 50px
+          border: solid 3px $orange
+          background: $orange
+          font-size: 26px
+          &:last-child
+            border: solid 3px $orange
+            background: $black
+        .mail-text
+          width: 100%
+          padding: 22px 22px
+          font-weight: 500
+          font-size: $desktop-body
+          text-align: right
+          color: $orange
+
+  //media
+  section.media
+    article
+      padding-bottom: 110px
+      ul
+        display: flex
+        flex-flow: row wrap
+        li
+          width: 50%
+          padding: 80px 20px 0 20px
+          border-bottom: none
+          .video-title
+            min-height: 120px
+            p
+              margin-bottom: 6px
+              &:nth-child(3)
+                margin-bottom: 10px
+              &:nth-child(1)
+                font-size: $desktop-h3
+
+  section.news
+    article
+      padding-bottom: 110px
+      .news-k
+        display: flex
+        flex-flow: row wrap
+        li
+          width: 50%
+          padding: 80px 20px 0 20px
+          border-bottom: none
+          .news-title
+            min-height: 120px
+          p
+            &:nth-child(1)
+              font-size: $desktop-h3
+
+  section.channel
+    padding-bottom: 50px
+    .title
+      h1
+        padding-bottom: 22px
+    picture
+      margin: 98px auto 72px auto
+      img
+        width: 1180px
+    .news-g
+      display: flex
+      flex-flow: row wrap
+      li
+        width: calc( 50% - 40px )
+        padding: 24px 0 30px 0
+        margin: 0 20px
+        border-bottom: solid 1px $white
+        p:nth-child(1)
+          margin-bottom: 12px

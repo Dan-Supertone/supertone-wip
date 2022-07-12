@@ -1,0 +1,607 @@
+section
+  .title
+    margin: 40px 0 30px 0
+    h1
+      padding-bottom: 6px
+      border-bottom: solid 3px #000000
+    p
+      margin-top: 12px
+  .title.no-p
+    margin-bottom: 0
+
+.only-pc
+  display: none
+
+section.pub-n-awards,
+section.usecases,
+section.vision,
+section.history,
+section.team,
+section.news
+  background: #EAEAEA
+
+section.contact,
+section.join,
+section.media,
+section.channel
+  background: #000000
+  .title
+    h1
+      border-bottom: solid 3px #FFFFFF
+
+section.main
+  height: 70vh
+  margin-top: $header-margin
+  background: #000000
+  user-select: none
+  article
+    height: 0
+    padding: 0
+    h1
+      position: absolute
+      top: 16px
+      left: 18px
+      z-index: 100
+      span
+        background: #fff
+        padding: 4px 10px
+        line-height: 1.7
+    .rolling
+      .post
+        transition: opacity 0.5s
+      .slick-slide
+        opacity: 1 //0
+      .slick-active
+        opacity: 1
+    video
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .main-bg
+    position: absolute
+    width: 100%
+    height: 100%
+    background: url('../images/main/01.png') center/cover no-repeat
+
+section.technology
+  background: #000
+  article
+    padding: 0 20px
+    .title
+      margin-bottom: 70px
+      h1
+        border-bottom: solid 3px $orange
+  article.demo
+    padding: 0
+    img
+      height: 26px
+      margin-bottom: 4px
+    .demo-inner
+      padding: 0 20px
+      &.top
+        margin-top: 12px
+        margin-bottom: 28px
+      &.bottom
+        margin-bottom: 70px
+    .dbpq-wrap
+      position: relative
+      width: 100%
+      padding-bottom: calc(56.25% + 87px)
+      margin-bottom: 12px
+      iframe
+        position: absolute
+        width: 100%
+        height: 100%
+    .dbpq-wrap-slider
+      position: relative
+      width: 100%
+      padding-bottom: calc(56.25% + 120px)
+      margin-bottom: 12px
+      iframe
+        position: absolute
+        width: 100%
+        height: 100%
+    .video
+      position: relative
+      width: 100%
+      height: auto
+      padding-top: 56.25%
+      margin-bottom: 12px
+      iframe, img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+section.pub-n-awards.only-m
+  ul
+    border-bottom: solid 1px #000000
+    li
+      padding: 18px 0
+      border-bottom: solid 1px #000000
+      h2
+        padding-bottom: 8px
+      h2.award
+        padding-bottom: 16px
+      p
+        padding-bottom: 16px
+      a
+        display: block
+        //width: 118px
+        //padding: 8px 0
+        margin: 0 auto
+        //border-radius: 20px
+        //background: $orange
+      img
+        margin-bottom: 12px
+    .more
+      height: auto
+      overflow: hidden
+      transition: height 2s ease
+    .more.hidden
+      height: 0
+      transition: height 2s ease
+  .more-btn
+    padding: 24px 24px 0 24px
+
+section.usecases
+  .title
+    margin-bottom: 26px
+  h2
+    padding-bottom: 6px
+  h3
+    padding-bottom: 8px
+  p
+    padding-bottom: 32px
+  .more
+    height: auto
+    overflow: hidden
+    transition: height 2s ease
+    border-bottom: solid 2px #000000
+  .more.hidden
+    height: 0
+    transition: height 2s ease
+  .more-btn
+    padding: 24px 24px 0 24px
+
+section.trustedby
+  background: #D6D6D6
+  picture
+    width: 90%
+    margin: 24px auto 40px auto
+    img
+      width: 100%
+
+section.contact.only-m
+  .title
+    h1
+      padding-bottom: 10px
+  .process
+    margin: 16px 0
+    h1
+      margin-bottom: 18px
+    h2
+      margin-bottom: 15px
+    p
+      margin-bottom: 15px
+  .steps
+    margin-bottom: 20px
+    border-bottom: solid 1px #FFFFFF
+    ul
+      position: relative
+      padding-right: 8px
+      margin: 30px 0 0 20px
+      border-left: solid 3px $orange
+      h3
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 50px
+      p
+        margin-bottom: 40px
+      li
+        position: relative
+        padding-left: 34px
+        div
+          position: absolute
+          top: -7px
+          left: -18px
+          width: 34px
+          height: 34px
+          padding-top: 7px
+          border-radius: 20px
+          background: $orange
+  .necessity
+    padding: 18px 0 18px 0
+    p
+      padding-left: 12px
+      margin-left: 4px
+      border-left: solid 3px #FFFFFF
+    a
+      position: relative
+      display: block
+      //width: 220px
+      //padding: 6px 0
+      //margin: 0 0 15px 15px
+      //border-radius: 20px
+      //background: #9F9F9F
+      margin: -4px 0 21px 18px
+      img
+        position: absolute
+        top: 7px
+        left: 15px
+      &.en
+        width: 300px
+        img
+          top: 5px
+          left: 15px
+  .more
+    padding: 48px 0 30px 0
+    border-top: solid 1px $white
+    p
+      margin-bottom: 20px
+    a
+      display: block
+      width: 240px
+      padding: 12px 0
+      margin: 0 auto
+      margin-bottom: 58px
+      border-radius: 50px
+      background: #1239D1
+      &:last-child
+        background: $orange
+        margin-bottom: 0
+
+section.people
+  height: 650px
+  margin-top: $header-margin
+  border: solid 22px $orange
+  background: url('../people/images/people-m.png')
+  background-size: cover
+  background-position: center
+  article
+    h1
+      position: absolute
+      top: 14px
+      left: 22px
+
+section.vision
+  h2
+    padding: 24px 0
+    margin-bottom: 24px
+    border-bottom: solid 3px $orange
+  .p-1
+    margin: 0 0 16px 0
+  .p-2
+    margin: 0 0 12px 0
+
+section.history
+  .column
+    display: flex
+    flex-flow: row nowrap
+    padding: 16px 0
+    border-bottom: solid 1px $black
+    div:nth-child(1)
+      width: 50px
+    div:nth-child(2)
+      width: 100%
+  .more
+    height: auto
+    overflow: hidden
+    border-bottom: solid 1px $black
+    transition: height 2s ease
+  .more.hidden
+    height: 0
+    transition: height 2s ease
+  .more-btn
+    padding: 24px 24px 0 24px
+
+section.ethics
+  background: #FCFE54
+  padding-bottom: 8px
+  p
+    margin-top: 26px
+    margin-bottom: 20px
+  li
+    padding-left: 20px
+    margin-top: 40px
+    border-left: solid 3px $black
+    h2
+    p
+      margin-top: 8px
+
+section.team
+  .random
+    //background: $orange
+    height: 343px
+    padding: 4px 12px
+    border: solid 10px $orange
+    user-select: none
+    em
+      //padding: 1px 6px
+      //margin-right: 4px
+      //background: $white
+      color: $orange
+      &.name
+        text-decoration: underline
+        text-underline-offset: 0.2rem
+        &:hover
+          color: #fff
+  .click-caption
+    display: flex
+    flex-flow: row nowrap
+    margin-top: 6px
+    cursor: pointer
+    user-select: none
+    margin: -62px 22px 26px 0
+    span
+    .blank
+      width: 100%
+  button.view-all
+    display: block
+    width: 180px
+    padding: 12px 0
+    margin: 0 auto
+    margin-top: 12px
+    margin-bottom: 24px
+    border-radius: 50px
+    background: $orange
+  .member-ul
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    width: 100%
+    max-width: 400px
+    min-height: 168px
+    padding: 0 2px
+    margin: 0 auto
+    &.hidden
+      height: 168px
+      overflow: hidden
+    .member-li
+      width: 98px
+      height: 168px
+      margin: 0 6px
+      cursor: pointer
+      .member-img
+        width: 100%
+        border-radius: 100%
+        border: solid 3px #9F9F9F
+      &.hide
+        display: none
+      p
+        margin-top: 4px
+        margin-bottom: 2px
+        &:last-child
+          margin: 0 0 20px 0
+      &.air
+        height: 0px
+        &.hide
+          display: block
+          height: 0px
+    .member-hidden
+      display: flex
+      flex-flow: row wrap
+      width: 100%
+      justify-content: space-between
+  .member-filter
+    display: flex
+    flex-flow: row wrap
+    max-width: 680px
+    padding: 0 4px
+    margin: 32px auto
+    .filter
+      font-family: 'neue-haas-grotesk-text', 'Min Sans', sans-serif
+      font-weight: 500
+      font-size: 14px
+      width: auto
+      padding: 6px 12px
+      margin: 4px 2px
+      border: solid 2px #000
+      border-radius: 50px
+      cursor: pointer
+      user-select: none
+      &.checked
+        background: white
+
+div.team-detail-wrap
+  position: fixed
+  display: none
+  justify-content: center
+  align-items: center
+  top: 0
+  left: 0
+  width: 100vw
+  height: calc(100vh - $header-margin)
+  margin-top: $header-margin
+  background: rgba(0, 0, 0, 0.8)
+  z-index: 500
+  &.show
+    display: flex
+  .team-detail
+    position: relative
+    width: calc(100% - 80px)
+    max-width: 900px
+    height: calc(100% - 80px)
+    max-height: 1000px
+    background: $orange //#EAEAEA
+    margin: 40px
+    border-radius: 4px
+    .team-detail-inner
+      width: 100%
+      height: 100%
+      border-radius: 4px
+      overflow-y: scroll
+    img.close
+      position: absolute
+      top: 16px
+      right: 16px
+      width: 20px
+      cursor: pointer
+    .team-detail-profile-wrap
+      display: flex
+      flex-flow: column nowrap
+      background: #EAEAEA
+      h1,
+      h2
+        line-height: 1
+      .team-detail-name-ko,
+      .team-detail-name-en
+        margin-bottom: 12px
+      .team-detail-role
+        margin-bottom: 32px
+    .team-detail-img
+      width: 100%
+      max-width: 400px
+      padding: 40px 60px 20px 60px
+      margin: 0 auto
+      img
+        width: 100%
+        border-radius: 1000px
+        border: solid 4px #9F9F9F
+    h1
+      font-weight: 700
+      font-size: 30px
+      text-align: center
+    h2
+      font-weight: 500
+      font-size: 14px
+      text-align: center
+    p
+      font-weight: 700
+      font-size: 24px
+      padding: 4px 12px
+      margin: 12px
+      background: #EAEAEA
+      //border: solid 10px $orange
+      em
+        color: $orange
+    &.ko
+      .team-detail-name-en,
+      .team-detail-text-1-en,
+      .team-detail-text-2-en,
+      .team-detail-text-3-en,
+      .team-detail-text-4-en,
+      .team-detail-text-5-en,
+      .team-detail-text-4-ko,
+      .team-detail-text-5-ko
+        display: none
+      .team-detail-name-ko,
+      .team-detail-text-1-ko,
+      .team-detail-text-2-ko,
+      .team-detail-text-3-ko,
+      .team-detail-text-4-ko.show,
+      .team-detail-text-5-ko.show
+        display: block
+    &.en
+      .team-detail-name-ko,
+      .team-detail-text-1-ko,
+      .team-detail-text-2-ko,
+      .team-detail-text-3-ko,
+      .team-detail-text-4-ko,
+      .team-detail-text-5-ko,
+      .team-detail-text-4-en,
+      .team-detail-text-5-en
+        display: none
+      .team-detail-name-en,
+      .team-detail-text-1-en,
+      .team-detail-text-2-en,
+      .team-detail-text-3-en,
+      .team-detail-text-4-en.show,
+      .team-detail-text-5-en.show
+        display: block
+
+.no-scroll
+  overflow: hidden
+
+section.join
+  .join-diagram
+    width: 264px
+    margin: 30px auto 24px auto
+  .join-cards
+    margin-bottom: 46px
+  .p-1
+    margin: 40px 0 40px 0
+    em
+      border-bottom: solid 2px $white
+  .p-2
+    margin-bottom: 46px
+    em
+      border-bottom: solid 2px $orange
+  .divider
+    width: 196px
+    margin: 48px auto 40px auto
+    border-bottom: solid 3px $orange
+  .p-3
+    margin-bottom: 16px
+  a
+    width: 272px
+    padding: 12px 0
+    margin: 0 auto
+    border-radius: 50px
+    background: $orange
+    &:last-child
+      margin-bottom: 46px
+      border: solid 3px $orange
+      background: $black
+
+section.media
+  margin-top: $header-height
+  ul
+    li
+      padding: 30px 0
+      border-bottom: solid 1px $white
+      &:last-child
+        border-bottom: none
+      p
+        margin-bottom: 12px
+        &:nth-child(3)
+          margin-bottom: 20px
+      .video
+        position: relative
+        width: 100%
+        height: auto
+        padding-top: 56.25%
+        margin-bottom: 10px
+        background: $black
+        iframe, img
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+
+section.news
+  .news-k
+    li
+      padding: 30px 0
+      border-bottom: solid 1px $black
+      &:last-child
+        padding-bottom: 0
+        border-bottom: none
+      p
+        margin-bottom: 8px
+        &:nth-child(2)
+          margin-bottom: 20px
+
+section.channel
+  padding-bottom: 26px
+  .title
+    h1
+      padding-bottom: 10px
+  picture
+    margin: 34px auto
+    img
+      width: 270px
+  .news-g
+    li
+      padding: 24px 0 30px 0
+      border-bottom: solid 1px $white
+      p:nth-child(1)
+        margin-bottom: 12px
+
+section.proposal
+  margin-top: $header-margin
+  background: #d6d6d6
+  article
+    padding: 14px 20px 14px 20px
