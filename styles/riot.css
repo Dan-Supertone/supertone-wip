@@ -239,13 +239,18 @@ section.entrance article p {
   padding-bottom: 20px;
   color: #fff;
 }
+section.entrance article p:last-child {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 120px;
+}
 section.entrance article #p1a2s3s4w5o6r7d {
   font-size: 18px;
   letter-spacing: 5pt;
   width: 228px;
   padding: 10px 20px;
   margin: 0 auto;
-  margin-bottom: 130px;
+  margin-bottom: 10px;
   background: #fff;
   border-radius: 500px;
 }
