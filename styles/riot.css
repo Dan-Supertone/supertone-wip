@@ -112,9 +112,11 @@ section.intro {
   background: #eaeaea;
 }
 section.intro article p {
-  font-size: 14px;
-  text-align: center;
-  padding-top: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 11px;
+  color: #2e3df5;
 }
 
 section.demo-wrap {

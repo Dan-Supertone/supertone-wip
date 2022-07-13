@@ -25,7 +25,8 @@
 
 <section class="intro">
   <article>
-    <p>It takes a while to load because of a lot of contents.</p>
+    <p>Welcome to Supertone’s Rift</p>
+    <!--<p>It takes a while to load because of a lot of contents.</p>-->
   </article>
 </section>
 
@@ -36,7 +37,7 @@
       Welcome Message From Akali
     </div>
     <div class="video">
-      <video src="./images/welcome.mp4" poster="./images/welcome-poster.png" controls></video>
+      <img src="./images/welcome-poster-btn.png" alt="" id="3mSb2u3o9GI" class="video-img" width="100%">
     </div>
   </article>
 </section>
@@ -75,7 +76,7 @@
       SVS
     </div>
     <div class="video">
-      <video src="./images/svs-riot.mp4" poster="./images/svs-riot-poster.png" controls></video>
+      <img src="./images/svs-riot-poster-btn.png" alt="" id="sTuFhazwE6Q" class="video-img" width="100%">
     </div>
   </article>
 </section>
@@ -151,10 +152,27 @@
       Arcane Ending Theme
     </div>
     <div class="dbpq-wrap ending">
-      <iframe src="https://supertone-studio-dev.web.app/dbpq-embed?src=https://d4vi5jlucxn3x.cloudfront.net/ending-original.mp4,https://d4vi5jlucxn3x.cloudfront.net/ending-jinx.mp3,https://d4vi5jlucxn3x.cloudfront.net/ending-powder.mp3&button=Original,Jinx,Powder"></iframe>
+      <iframe src="https://supertone-studio-dev.web.app/dbpq-embed?src=https://d4vi5jlucxn3x.cloudfront.net/ending-original-3.mp4,https://d4vi5jlucxn3x.cloudfront.net/ending-jinx.mp3,https://d4vi5jlucxn3x.cloudfront.net/ending-powder.mp3&button=Original,Jinx,Powder"></iframe>
     </div>
   </article>
 </section>
+
+
+<section class="divider"><article></article></section>
+
+
+<section class="demo-wrap">
+  <article class="demo margin-top">
+    <div class="demo-title">
+      Welcome Message Blooper
+    </div>
+    <div class="video">
+      <img src="./images/blooper-poster-btn.png" alt="" id="Kc0UNdQJeRc" class="video-img" width="100%">
+    </div>
+  </article>
+</section>
+
+
 
 
 <section class="entrance">
@@ -188,5 +206,10 @@
       $('html, body').removeClass('no-scroll');
     }
   }
+
+  $('.video-img').click( function() {
+    var youtubeURL = $(this).attr('id');
+    $(this).parent().html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + youtubeURL + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+  });
 </script>
 </html>
