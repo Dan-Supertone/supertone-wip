@@ -1,23 +1,19 @@
 $('header').html(`
   <article>
-    <a href="//dan-supertone.github.io/supertone-wip" target="_self"><img src="images/logo.svg" alt="" class="logo"></a>
+    <a href="//supertone.ai" target="_self"><img src="./images/logo.svg" alt="" class="logo"></a>
 
     <div class="lang"></div>
 
-    <!--<img src="images/menu-toggle.svg" alt="" class="menu-toggle" width="20px">-->
-
     <div class="header-rolling post-slider only-m">
       <div class="post-wrapper">
-        <!--<div class="post"><a href="/people/index.html" target="_self">People</a></div>-->
-        <!--<div class="post"><a href="/media/index.html" target="_self">Media</a></div>-->
-        <div class="post"><a href="//dan-supertone.github.io/supertone-wip/people/index.html" target="_self">People</a></div>
-        <div class="post"><a href="//dan-supertone.github.io/supertone-wip/media/index.html" target="_self">Media</a></div>
+        <div class="post"><a href="//supertone.ai/people/index.html" target="_self">People</a></div>
+        <div class="post"><a href="//supertone.ai/media/index.html" target="_self">Media</a></div>
       </div>
     </div>
 
     <div class="menu">
-      <a href="//dan-supertone.github.io/supertone-wip/people/index.html" target="_self">People</a>
-      <a href="//dan-supertone.github.io/supertone-wip/index.html" target="_self">Media</a>
+      <a href="//supertone.ai/people/index.html" target="_self">People</a>
+      <a href="//supertone.ai/media/index.html" target="_self">Media</a>
     </div>
   </article>
 
@@ -25,6 +21,19 @@ $('header').html(`
     <div class="progress"></div>
   </div>
 `);
+
+// Header Rolling Menu
+$('header .header-rolling .post-wrapper').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  vertical: true,
+  draggable: false,
+  pauseOnFocus: false,
+});
 
 // Progress Bar
 window.onscroll = function () {
@@ -45,15 +54,3 @@ $('footer').html(`
     <div>© 2022 Supertone Inc, All Rights Reserved</div>
   </article>
 `);
-
-$('header .header-rolling .post-wrapper').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  autoplay: true,
-  autoplaySpeed: 1500,
-  vertical: true,
-  draggable: false,
-  pauseOnFocus: false,
-});
