@@ -112,6 +112,8 @@ section.demo-wrap
       margin-bottom: 12px
       &.silco
         padding-bottom: calc(42.5% + 87px)
+      &.ending
+        padding-bottom: calc(42% + 87px)
       iframe
         position: absolute
         width: 100%
@@ -119,7 +121,7 @@ section.demo-wrap
         border: none
     .demo-title
       font-weight: 500
-      font-size: 22px
+      font-size: 32px //48px
       padding-bottom: 6px
       margin: 0 20px
       margin-bottom: 12px
@@ -130,25 +132,29 @@ section.demo-wrap
         margin-bottom: 18px
     .demo-title-sub
       font-weight: 400
-      font-size: 16px
+      font-size: 20px
       display: inline-block
       width: auto
       height: auto
-      padding: 6px 12px
-      margin: 0 0 10px 16px
-      color: #b7b7b7
-      border: solid 1px #b7b7b7
-      border-radius: 500px
+      //padding: 6px 12px
+      margin: 0 0 10px 20px
+      color: #fff
+      //border: solid 1px #b7b7b7
+      //border-radius: 500px
+      .poweredby
+        height: 24px
+        margin-bottom: -4px
+        margin-left: 6px
       &.second
         margin-top: 12px
-        color: #30c8ff
-        border: solid 1px #30c8ff
+        //color: #30c8ff
+        //border: solid 1px #30c8ff
       &.rtvc
-        color: #11daab
-        border: solid 1px #11daab
+        //color: #11daab
+        //border: solid 1px #11daab
       &.blue
-        color: #30c8ff
-        border: solid 1px #30c8ff
+        //color: #30c8ff
+        //border: solid 1px #30c8ff
     .video
       position: relative
       width: 100%
@@ -209,6 +215,9 @@ section.entrance
 @media all and (min-width: 900px)
   section.demo-wrap
     article.demo
+      .demo-title
+        font-size: 40px
+        padding-bottom: 16px
       .demo-title-sub
         margin: 0 0 18px 18px
         &.second
