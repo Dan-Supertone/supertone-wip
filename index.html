@@ -21,8 +21,8 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!-- Swiper -->
-<link rel="stylesheet" href="//unpkg.com/swiper@8/swiper-bundle.min.css"/>
-<script src="//unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!--<link rel="stylesheet" href="//unpkg.com/swiper@8/swiper-bundle.min.css"/>-->
+<!--<script src="//unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
 </head>
 <body>
 
@@ -57,17 +57,22 @@
       <p>Singing Voice Synthesis</p>
     </div>
     <div class="demo-inner-pc">
+
+      <div class="video">
+        <img src="./images/technology-svs-poster.png" alt="" id="Kk4IPXUVLAg" class="video-img" width="100%">
+      </div>
+      <!--
       <div class="video">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kk4IPXUVLAg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!--<iframe src="https://supertone-studio-dev.web.app/dbpq-embed?src=https://d4vi5jlucxn3x.cloudfront.net/goyo+-+original.mp4,https://d4vi5jlucxn3x.cloudfront.net/goyo+-+after.wav&title=Original%20Voice,Commercial%20Voice&button=Original,Powered%E2%84%A2\by%20Supertone"></iframe>-->
       </div>
+      -->
       <div class="demo-inner bottom" data-langNum="4"></div>
     </div>
   </article>
 
   <article class="demo">
     <div class="demo-inner top">
-      <img src="./images/technology-logo-nuvo.svg" alt="">
+      <img src="./images/technology-logo-cvc.svg" alt="">
       <p>Controllable Voice Conversion</p>
     </div>
     <div class="demo-inner-pc">
@@ -385,7 +390,7 @@
         <div class="necessity-inner-wrap">
           <div class="necessity-inner">
             <p data-langNum="31"></p>
-            <a data-langNum="32" href="//www.notion.so/supertone/Voice-source-quality-conditions-Supertone-4ef6d038a756488fa1310bab630f0114" target="_blank"></a>
+            <a data-langNum="32" href="//supertone.notion.site/Voice-source-quality-conditions-Supertone-4ef6d038a756488fa1310bab630f0114" target="_blank"></a>
           </div>
           <div class="necessity-inner" data-langNum="33"></div>
           <div class="necessity-inner" data-langNum="34"></div>
@@ -706,6 +711,15 @@ $(document).ready(function(){
         break;
     };
   };
+});
+
+
+// Video (Temporary)
+// youtube-thumb
+// img에 id값
+$('.video-img').click( function() {
+  var youtubeURL = $(this).attr('id');
+  $(this).parent().html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + youtubeURL + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 });
 
 

@@ -4,6 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Supertone</title>
+<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+<link rel="icon" href="../favicon.png" type="image/x-icon">
 
 <!-- Styles & Scripts -->
 <link rel="stylesheet" href="../styles/main.css">
@@ -12,28 +14,19 @@
 <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- Fonts -->
-<link rel="stylesheet" href="https://use.typekit.net/cbd6ksz.css">
+<link rel="stylesheet" href="//use.typekit.net/cbd6ksz.css">
 
 <!-- Slick -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!-- Swiper -->
-<link rel="stylesheet" href="//unpkg.com/swiper@8/swiper-bundle.min.css"/>
-<script src="//unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <header></header>
-<div class="menu-m close">
-  <img src="images/menu-toggle-close.svg" alt="" class="menu-toggle" width="20px">
-  <a href="../index.html" target="_self">What We Do</a>
-  <a href="../people/index.html" target="_self">People</a>
-  <a href="../media/index.html" target="_self">Media</a>
-</div>
 <section class="proposal">
   <article>
     <div id="ff-compose"></div>
-    <script async defer src="https://formfacade.com/include/109947282311646074949/form/1FAIpQLSewU_fQ8LWXSXcOUK80jgZdPBLOMPygCKrbG9R2K7Rf4x2KOw/classic.js?div=ff-compose"></script>    
+    <script async defer src="https://formfacade.com/include/109947282311646074949/form/1FAIpQLSewU_fQ8LWXSXcOUK80jgZdPBLOMPygCKrbG9R2K7Rf4x2KOw/classic.js?div=ff-compose"></script> 
+    <div class="air" data-langNum="1"></div>
   </article>
 </section>
 <footer></footer>
@@ -42,5 +35,18 @@
 <script src="../scripts/header.js"></script>
 <script src="../scripts/setLang.js"></script>
 <script>
+
+// Language Pack
+$.lang = {};
+
+$.lang.ko = {
+  0: '서울 강남구 선릉로 667 3층<a href="https://place.map.kakao.com/729469318" target="_blank">지도 보기</a>',
+  1: ''
+};
+
+$.lang.en = {
+  0: '667, Seolleung-ro, <br class="only-m">Gangnam-gu, Seoul, Korea<a href="https://goo.gl/maps/rHuSz6uBhLmmEhLX8" target="_blank">Show on map</a>',
+  1: ''
+};
 </script>
 </html>

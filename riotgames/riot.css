@@ -119,6 +119,9 @@ section.intro article p {
   color: #2e3df5;
 }
 
+section.warning {
+  background: #fdff82;
+}
 section.demo-wrap {
   margin-top: 86px;
 }

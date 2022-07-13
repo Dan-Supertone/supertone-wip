@@ -41,7 +41,7 @@ function progressBar() {
 $('footer').html(`
   <article>
     <div data-langNum="0"></div>
-    <div>contact@supertone.ai</div>
+    <div><a href="mailto:contact@supertone.ai" class="footer-mail">contact@supertone.ai</a></div>
     <div>© 2022 Supertone Inc, All Rights Reserved</div>
   </article>
 `);

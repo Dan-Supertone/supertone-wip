@@ -108,6 +108,10 @@ footer a, footer a:hover, footer a:active {
   text-decoration-color: #2e3df5;
   text-decoration-thickness: 1px;
 }
+footer a.footer-mail, footer a.footer-mail:hover, footer a.footer-mail:active, footer a:hover.footer-mail, footer a:hover.footer-mail:hover, footer a:hover.footer-mail:active, footer a:active.footer-mail, footer a:active.footer-mail:hover, footer a:active.footer-mail:active {
+  color: #fff;
+  text-decoration: none;
+}
 
 section .title h1 {
   font-weight: 700;
@@ -531,6 +535,10 @@ footer article div a {
   top: 8px;
   right: 0;
 }
+footer article div a.footer-mail {
+  position: relative;
+  top: 0;
+}
 
 section .title {
   margin: 40px 0 30px 0;
@@ -916,6 +924,9 @@ section.ethics li p {
   margin-top: 8px;
 }
 
+section.team.team-hidden {
+  display: none;
+}
 section.team .random {
   height: 343px;
   padding: 4px 12px;
@@ -1272,6 +1283,9 @@ section.proposal {
 }
 section.proposal article {
   padding: 14px 20px 14px 20px;
+}
+section.proposal article .air {
+  display: none;
 }
 
 @media all and (min-width: 900px) {
@@ -1825,5 +1839,9 @@ div.team-detail-wrap .team-detail .team-detail-profile-wrap .team-detail-name-en
   }
   section.channel .news-g li p:nth-child(1) {
     margin-bottom: 12px;
+  }
+  section.news a *,
+section.channel a * {
+    cursor: pointer;
   }
 }

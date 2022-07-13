@@ -38,12 +38,14 @@ function setLang(currentLanguage) {
       $this.removeClass('en');
       $('.team-detail').addClass('ko');
       $('.team-detail').removeClass('en');
+      $('section.team').removeClass('team-hidden');
     } else {
       $('.lang').html('가');
       $this.addClass('en');
       $this.removeClass('ko');
       $('.team-detail').addClass('en');
       $('.team-detail').removeClass('ko');
+      $('section.team').addClass('team-hidden');
     };
   });
 
