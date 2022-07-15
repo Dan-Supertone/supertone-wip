@@ -170,7 +170,7 @@ const teamDetail = {
   yangyangii: [
     'yangyangii', '양진혁', 'Jinhyeok Yang', 'Research Scientist',
     '<em>양진혁</em>의 닉네임은 <em>Yangyangii</em>입니다.',
-    '<em>양진혁</em>은 <em>수퍼톤의 리서치 연구원</em>이며 <em>기술을 고도화</em>합니다.',
+    '<em>양진혁</em>은 <em>수퍼톤의 리서치 연구원</em>이며 <em>인공지능이 연기하게</em>합니다.',
     '<em>양진혁</em>은 <em>영화, 드라마, 소설에 미쳐있</em>습니다.',
     '<em>양진혁</em>은 <em>엔씨소프트에서 딥러닝 기반 음성 기술을 연구</em>했습니다.',
     undefined,
